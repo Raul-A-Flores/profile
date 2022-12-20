@@ -59,15 +59,6 @@ const Header = () => {
           src={images.circle} alt="profile_circle"
           className='overlay_circle'/>
       </motion.div>
-
-      <motion.div>
-        <h2>Hello there! <span>👋</span></h2>
-        <p>I am </p>
-        <p className='head-texts'>Raul Flores</p>
-        <h3>Full Stack Developer</h3>
-
-      </motion.div>
-
       <motion.div
         whileInView={{ opacity: [0,1]}}
         transition={{ duration: 0.5, delayChildren: 0.5}}
@@ -88,8 +79,8 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5}}
         className="app__header-img">
        
-       {/*  // This is where profile image goes  */}
-        {/* <img src={images.profile} alt="profile_bg"/> */}
+       
+        <img src={images.profile} alt="profile_bg"/> 
         <motion.img
           whileInView={{scale: [0,1]}}
           transition={{ duration: 1, ease: 'easeInOut'}}
@@ -99,6 +90,12 @@ const Header = () => {
 
 
       
+     <div>
+        <h2>Hello there! <span>👋</span></h2>
+        <p>I am </p>
+        <h1 className='head-text'>Raul Flores</h1>
+        <h3>Full Stack Developer</h3>
+     </div>
       
       <motion.div
       variant={scaleVariants}
