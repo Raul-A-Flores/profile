@@ -59,6 +59,14 @@ const Header = () => {
           src={images.circle} alt="profile_circle"
           className='overlay_circle'/>
       </motion.div>
+
+      <motionl.div>
+        <h2>Hello there! <span>👋</span></h2>
+        <p>I am </p>
+        <h1 className='head-text'>Raul Flores</h1>
+        <h3>Full Stack Developer</h3>
+
+      </motionl.div>
       <motion.div
         whileInView={{ opacity: [0,1]}}
         transition={{ duration: 0.5, delayChildren: 0.5}}
@@ -90,12 +98,6 @@ const Header = () => {
 
 
       
-     <div>
-        <h2>Hello there! <span>👋</span></h2>
-        <p>I am </p>
-        <h1 className='head-text'>Raul Flores</h1>
-        <h3>Full Stack Developer</h3>
-     </div>
       
       <motion.div
       variant={scaleVariants}
